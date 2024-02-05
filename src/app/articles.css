@@ -1,0 +1,122 @@
+.top-circle {
+    border-radius: 100%;
+    width: 650px;
+    height: 550px;
+}
+
+.top-circle-2 {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.speaker-img {
+    width: 500px;
+    height: 500px;
+}
+
+.gs-gradient {
+    background: rgb(174, 204, 31);
+    background: linear-gradient(90deg, rgba(174, 204, 31, 1) 0%, rgba(228, 223, 13, 1) 100%);
+}
+
+.articles-image-container {
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-top: 97px; */
+    background: #e0e0de;
+    background: linear-gradient(90deg, #e0e0de 0%, #f0f1f3 100%);
+    overflow: hidden;
+}
+
+.articles-image {
+    width: auto;
+    height: 70vh;
+}
+
+.articles-text-container {
+    box-shadow:
+        0.7px 1.7px 2.7px rgba(0, 0, 0, 0.047),
+        1.8px 4.3px 6.9px rgba(0, 0, 0, 0.067),
+        3.7px 8.9px 14.2px rgba(0, 0, 0, 0.083),
+        7.7px 18.3px 29.2px rgba(0, 0, 0, 0.103),
+        21px 50px 80px rgba(0, 0, 0, 0.15);
+}
+
+.kaleyara-icon {
+    width: 700px !important;
+    height: 700px !important;
+    object-fit: contain;
+    bottom: 100px;
+    left: 0%;
+    opacity: 0.1;
+}
+
+.typed-cursor {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1440px){
+    .kaleyara-icon {
+        width: 600px !important;
+        height: 600px !important;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .kaleyara-icon {
+        width: 500px !important;
+        height: 500px !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .kaleyara-icon {
+        width: 410px !important;
+        height: 410px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .kaleyara-icon {
+        width: 410px !important;
+        height: 410px !important;
+        position: absolute;
+        bottom: 40px;
+    }
+    .articles-image-container{
+        width: 100%;
+        position: relative;
+        height: auto;
+        grid-column: 1;
+        padding-top: 100px;
+    }
+    .articles-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    .top-circle-2{
+        display: none;
+    }
+    .speaker-img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .articles-image-container{
+    }
+    .articles-image {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+}
